@@ -49,3 +49,48 @@ cp .env.example .env
 php artisan key:generate
 php artisan migrate --seed
 php artisan storage:link
+
+Make sure to set your DB credentials in the .env file.
+
+
+
+👤 Admin Login
+Default seeded admin credentials (from DatabaseSeeder.php):
+
+Email: admin@admin.com
+Password: password
+
+You can change them later from the Users section.
+
+📁 Folder Structure Highlights
+app/Models/ — Eloquent Models (User, Project, Client, Task)
+
+app/Http/Controllers/ — Core logic for resources
+
+resources/views/dashboard.blade.php — Dashboard with charts
+
+routes/web.php — Routes for admin and frontend access
+
+
+
+🧩 Permissions
+Handled by Spatie Roles & Permissions. You can assign:
+
+view projects, edit tasks, manage users, etc.
+
+Manage roles & permissions via UI or artisan commands.
+
+
+📄 License
+This project is open-source and available under the MIT license.
+
+
+
+🙌 Contributions
+Pull requests are welcome. For major changes, please open an issue first.
+
+
+
+
+
+
